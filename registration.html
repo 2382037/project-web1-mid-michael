@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="kael ganteng.jpg" />
+    <style>
+      /* Reset default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9; /* Warna latar belakang lembut */
+      }
+
+      /* Header section */
+      header {
+        background-color: #4caf50; /* Ganti warna header menjadi hijau cerah */
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; /* Teks lebih tegas */
+      }
+
+      /* Main content area */
+      main {
+        padding: 20px;
+      }
+
+      /* Form styling */
+      .form-container {
+        background-color: white;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .flex-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="tel"],
+      input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      button:hover {
+        background-color: #45a049; /* Warna saat hover */
+      }
+
+      /* Footer section */
+      footer {
+        background-color: #4caf50; /* Warna footer sesuai dengan header */
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Saya</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="registration.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="submit_registration.php" method="post" class="flex-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="birth-date">Birth Date</label>
+            <input type="date" id="birth-date" name="birth_date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone_number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+
+          <div class="form-group">
+            <label for="town">Town</label>
+            <input type="text" id="town" name="town" required />
+          </div>
+
+          <div class="form-group">
+            <label for="zip-code">Zip Code</label>
+            <input
+              type="text"
+              id="zip-code"
+              name="zip_code"
+              pattern="[0-9]{5}"
+              required
+            />
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

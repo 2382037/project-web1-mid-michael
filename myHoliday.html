@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myHoliday</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="kael ganteng.jpg" />
+    <style>
+      /* Reset default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9; /* Warna latar belakang lembut */
+      }
+
+      /* Header section */
+      header {
+        background-color: #4caf50; /* Ganti warna header menjadi hijau cerah */
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin-bottom: 10px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; /* Teks lebih tegas */
+      }
+
+      /* Main content area */
+      main {
+        padding: 20px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .intro-text {
+        flex: 1;
+      }
+
+      .intro-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .responsive-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan untuk gambar */
+      }
+
+      /* Gallery styling */
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease; /* Animasi untuk zoom saat hover */
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.05); /* Zoom in saat hover */
+      }
+
+      /* Footer section */
+      footer {
+        background-color: #4caf50; /* Warna footer sesuai dengan header */
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>holidays</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="registration.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="holiday">
+        <h2>myHoliday</h2>
+        <p>
+          I worked at the boys' dormitory during the holidays because I was
+          lazy.
+          <strong>It was better</strong> for me to work in the dormitory to earn
+          money to reduce the burden on parents, so I decided to work during the
+          holidays. During the holidays, my fellow workers were very compact and
+          good. We started working from morning until evening, and every day,
+          our fellow workers were very compact. So, after we finished work, we
+          exercised together. My workmates played football behind the dormitory.
+        </p>
+
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="foto1.jpg" alt="Beach View" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto2.jpg" alt="Mountain Escape" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto3.jpg" alt="City Lights" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto4.jpg" alt="Forest Adventure" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto5.jpg" alt="Snowy Hills" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto6.jpg" alt="Desert Sunset" />
+          </div>
+          <div class="gallery-item">
+            <img src="foto7.jpg" alt="Waterfall" />
+          </div>
+        </div>
+
+        <p>
+          We rarely had breakfast during our holiday because we were very lazy
+          to wake up early to cook. By 7 o'clock, we already started working,
+          and we only drank milk every morning. After finishing work, we cooked
+          with friends, all helping each other — some cooked rice, some washed
+          dishes, and others cooked the side dishes.
+        </p>
+
+        <p>
+          During the holidays, we did everything together,
+          <strong
+            >so every job was very enjoyable. After working for almost 4 months
+            before the start of lectures, we went to Waterworld with fellow
+            workers to relax. We were tired of working in the dormitory and
+            wanted to enjoy ourselves before classes started. We spent the day
+            from morning until evening, and we were very happy.</strong
+          >
+          This is my holiday story — everyone helped each other and stayed
+          close. That's my experience during the holidays.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael. Hak Cipta Dilindungi.</p>
+    </footer>
+  </body>
+</html>

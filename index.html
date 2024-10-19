@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <style>
+     /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Warna latar belakang lembut */
+}
+
+/* Header section */
+header {
+  background-color: #4CAF50; /* Ganti warna header menjadi hijau cerah */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Teks lebih tegas */
+}
+
+/* Main content area */
+main {
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan untuk gambar */
+}
+
+/* Footer section */
+footer {
+  background-color: #4CAF50; /* Warna footer sesuai dengan header */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Saya</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="registration.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro" class="flex-container">
+        <div class="intro-text">
+          <h2>Welcome To my Website</h2>
+          <p>
+            Hello! My name is Michael Brain. I am a student who is passionate
+            about information technology.
+          </p>
+        </div>
+        <div class="intro-image">
+          <img
+            src="kael ganteng.jpg"
+            alt="Foto Saya"
+            class="responsive-image"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="kael ganteng.jpg" />
+    <style>
+      /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Warna latar belakang lembut */
+}
+
+/* Header section */
+header {
+  background-color: #4CAF50; /* Ganti warna header menjadi hijau cerah */
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Teks lebih tegas */
+}
+
+/* Main content area */
+main {
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan untuk gambar */
+}
+
+/* Footer section */
+footer {
+  background-color: #4CAF50; /* Warna footer sesuai dengan header */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="registration.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="flex-container">
+          <div class="bio">
+            <h3>Brief Biography</h3>
+            <p><strong>Name:</strong> Michael Brain</p>
+            <p><strong>Date of Birth:</strong> Mei 02, 2005</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Hobbies:</strong> Playing music, sports</p>
+            <p>Currently pursuing undergraduate studies at UNAI.</p>
+          </div>
+          <div class="photo">
+            <img src="kael.jpg" alt="Your Photo" class="profile-photo" />
+          </div>
+        </div>
+
+        <h5>Hobbies & Interests</h5>
+
+        <!-- Unordered List: General Hobbies -->
+        <ul>
+          <li>Playing Games</li>
+          <li>Playing Football</li>
+          <li>Mountain Climbing</li>
+        </ul>
+
+        <h5>Top 3 Games I Enjoy:</h5>
+
+        <!-- Ordered List: Specific Interests in Gaming -->
+        <ol>
+          <li>The Legend of Zelda: Breath of the Wild</li>
+          <li>Pro Evolution Soccer</li>
+          <li>Among Us</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Michael. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
